@@ -1,0 +1,10 @@
+//test error_parse
+
+int f (int x) {
+//@requires x >= 0;
+  return -x;
+}
+
+int main() {
+  return f(-3);
+}

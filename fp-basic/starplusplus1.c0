@@ -1,0 +1,7 @@
+//test error_parse
+
+int main () {
+  int* p = alloc(int);
+  *p++;
+  return *p;
+}

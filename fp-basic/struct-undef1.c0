@@ -1,0 +1,9 @@
+//test error_typecheck
+
+int bogoderef(struct bogo *b) {
+  return b->nonexistent;
+}
+
+int main () {
+  return 0;
+}

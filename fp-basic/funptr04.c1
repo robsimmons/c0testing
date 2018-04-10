@@ -1,0 +1,10 @@
+//test error_runtime
+
+int illegal(char c) {
+  error("illegal character");
+}
+
+int main() {
+  illegal('\0');
+  return 4;
+}

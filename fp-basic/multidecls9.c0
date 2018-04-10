@@ -1,0 +1,7 @@
+//test error_typecheck
+
+int main() {
+  int i;
+  int i;
+  return 1;
+}

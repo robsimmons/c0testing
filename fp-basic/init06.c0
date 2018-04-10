@@ -1,0 +1,7 @@
+//test error_typecheck
+
+int main () {
+  int xx = 29;
+  x = 14;
+  return xx;
+}

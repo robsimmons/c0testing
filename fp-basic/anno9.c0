@@ -1,0 +1,6 @@
+//test error_typecheck
+
+int main () {
+  int x = \result;
+  return x;
+}

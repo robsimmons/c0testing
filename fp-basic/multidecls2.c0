@@ -1,0 +1,12 @@
+//test error_typecheck
+
+int id (int x) {
+  return x;
+}
+int id (int x) {
+  return x;
+}
+
+int main () {
+  return id(3);
+}

@@ -1,0 +1,5 @@
+//test error_parse
+
+/*@ // a comment in an annotation
+
+int main() { return 0 };

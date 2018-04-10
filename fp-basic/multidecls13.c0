@@ -1,0 +1,9 @@
+//test error_typecheck
+
+int id (int x, int y);
+
+int id (int x);
+
+int main () {
+  return id(3,4);
+}
