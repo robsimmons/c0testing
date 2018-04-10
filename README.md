@@ -17,14 +17,16 @@ one or more lines at the beginning of the file begin with `//test`.
          | error_runtime     - Calls the error() function
          | error             - Fails in any of the error categories above
          | div-by-zero       - Arithmetic error
+         | aritherror        - Arithmetic error (alias of div-by-zero)
          | infloop           - Should run, but will time out
          | abort             - Contract or assertion error
-         | memerror          - Memory error
+         | segfault          - Memory error
+         | memerror          - Memory error (alias of segfault)
          | typecheck         - Pass all static checks. Do not link/run.
 ```
 
-The `typecheck` spec is a misnomer, it should pass all static checks, including
-purity checking.
+The `typecheck` spec means that the spec should pass _all_ static checks,
+(including purity checking). These programs need not link or run.
 
 Tests should be read line-by-line until the first line that does not begin
 with `//test`. This allows us to write the following specification:
