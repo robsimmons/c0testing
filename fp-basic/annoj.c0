@@ -11,7 +11,7 @@ int main () {
     //@assert *p == 0;
     int y = inc(p);
   else
-    //@assert *p != 0; 
+    /*@assert *p != 0; @*/
     {
       int w = inc(p);
       int z = inc(p);

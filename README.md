@@ -47,3 +47,7 @@ int main()
   return 17;
 }
 ```
+
+The tests in this repository don't have a lot of organization, and are
+mostly just grouped by author (fp: Frank Pfenning, wjl: William Lovas, rjs:
+Robert Simmons).
