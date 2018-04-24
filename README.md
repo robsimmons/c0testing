@@ -9,7 +9,8 @@ one or more lines at the beginning of the file begin with `//test`.
 
 ```
 <test> ::= //test [<arg>* =>] <spec> \n
-<arg>  ::= -l<lib> | -d | --no-purity-check
+<arg>  ::= -l<lib> | -d | --no-purity-check | --standard=<lang>
+<lang> ::= l1 | l2 | l3 | l4 | c0 | c1
 <spec> ::= return <num>      - Should return a specific quantity
          | error_parse       - Fails to parse
          | error_typecheck   - Fails on typechecking
