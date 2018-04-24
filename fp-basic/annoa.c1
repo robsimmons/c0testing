@@ -1,4 +1,4 @@
-//test error_parse
+//test error_typecheck
 
 int f (int x) {
   return (\hastag(int,x));
