@@ -2,8 +2,8 @@
 # /(\/\/test.*\n)*/; the matching string then matches against this grammar.
 
 Tests -> ("//test" (_ (Arg _):* "=>"):? _ Spec _ ("\r" | "\n" | "\r\n" | "\n\r")):*
-Arg   -> "-l" [a-zA-Z]:+ | "-d" | "--no-purity-check" | "--standard" _ "=" _ Lang
-Lang  -> "l1" | "l2" | "l3" | "l4" | "c0" | "c1"
+Arg   -> "-l" [a-zA-Z_]:+ | "-d" | "--no-purity-check" | "--standard" _ "=" _ Lang
+Lang  -> "l1" | "L1" | "l2" | "L2" | "l3" | "L3" | "l4" | "L4" | "c0" | "C0" | "c1" | "C1" 
 Spec  -> "return" _ "-":? [0-9]:+
        | "error_parse"
        | "error_typecheck"
