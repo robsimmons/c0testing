@@ -1,0 +1,7 @@
+//test --standard=l1 => error_parse
+//test --standard=l2 => error_parse
+//test error_typecheck
+
+void main() {
+    return;
+}

@@ -1,0 +1,11 @@
+//test --standard=l1 => error_parse
+//test --standard=l2 => error_parse
+//test --standard=l3 => error_parse
+//test --standard=l4 => error_parse
+//test return -12
+
+int main() {
+    char c = 'a';
+    c = 'b';
+    return -12;
+}
