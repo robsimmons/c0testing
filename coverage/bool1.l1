@@ -1,8 +1,0 @@
-//test error_parse
-//test --standard=l2 => return 4
-//test -lstring -d --no-purity-check => error_parse
-
-int main() {
-    bool b = true;
-    return 4;
-}

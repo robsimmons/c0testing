@@ -1,0 +1,8 @@
+//test --standard=l1 => error_parse
+//test return 4
+
+int main() {
+    bool b = true;
+    b = false;
+    return 4;
+}
