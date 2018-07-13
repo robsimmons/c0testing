@@ -1,4 +1,4 @@
-//test error_typecheck
+//test error_parse
 
 /* we cannot define another type to be void */
 

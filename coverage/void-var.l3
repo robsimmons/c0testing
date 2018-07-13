@@ -1,6 +1,4 @@
-//test --standard=l1 => error_parse
-//test --standard=l2 => error_parse
-//test error_typecheck
+//test error_parse
 
 int main() {
     void x = 3;
