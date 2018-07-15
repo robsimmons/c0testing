@@ -1,4 +1,4 @@
-//test error_parse
+//test error_typecheck
 int main() {
   int i = 0;
   int* j = alloc(int);

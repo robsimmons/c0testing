@@ -1,4 +1,4 @@
-//test error_parse
+//test error_typecheck
 // Good error message would look like:
 // Cannot take the address of f, &e is only allowed if e is a function.
 

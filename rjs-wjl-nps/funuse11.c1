@@ -1,4 +1,4 @@
-//test error_parse
+//test error_typecheck
 // Good error message would look like:
 // expected fn* got fn
 

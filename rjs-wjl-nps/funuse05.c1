@@ -1,4 +1,4 @@
-//test error_parse
+//test error_typecheck
 // Good error message will be tricky, but
 // 'f' is a function pointer but it is not dereferenced (try '(*f)')
 // would probably help if the suggestion was in parentheses...
