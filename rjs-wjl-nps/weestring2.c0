@@ -1,0 +1,4 @@
+//test -lstring => error_parse
+int main() {
+  return char_ord('\');
+}

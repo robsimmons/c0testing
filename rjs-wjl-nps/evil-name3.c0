@@ -1,0 +1,12 @@
+//test -d => return 2
+int foo (int _result)
+//@ensures \result > _result;
+{
+  return _result + 1;
+}
+
+int main ()
+{
+  return foo(1);
+}
+

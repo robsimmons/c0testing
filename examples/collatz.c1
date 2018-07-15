@@ -1,0 +1,23 @@
+//test return 208
+
+// Odd loop constructs and if statements
+
+int main() {
+  int q = 0;
+  int n = 2463;
+  while (true) {
+    int d = q;
+    d += 1;
+    q = d;
+    if (n == 1) break;
+    { int c;   
+      if (n % 2 == 1) {
+        c = 3 * n + 1;
+        n = c;
+        continue;
+      }
+    n = n / 2;
+    }
+  }
+  return q - 1;
+}

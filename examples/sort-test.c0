@@ -1,0 +1,38 @@
+//test return 0
+/* Testing sorting implementations
+ * Frank Pfenning, Fall 2010
+ */
+
+#use <conio>
+#use <rand>
+#use "qsort.c0"
+
+int main () {
+  int seed = 0x8badf00d;
+  rand_t gen = init_rand(seed);
+  int n = (1<<9)-3; // start with 1<<10 for timing; 1<<9 for -d
+  int num_tests = 100; // start with 1000 for timing; 100 for -d
+  int[] A = alloc_array(int, n);
+
+  print("Testing array of size 0\n");
+  int[] Zero = alloc_array(int, 0);
+  qsort(Zero, 0, 0);
+  assert(is_sorted(Zero, 0, 0));
+
+  print("Testing array of size 1\n");
+  int[] One = alloc_array(int, 1);
+  One[0] = 89;
+  qsort(One, 0, 1);
+  assert(is_sorted(One, 0, 1));
+
+  print("Testing random array of size "); printint(n);
+  print(", "); printint(num_tests); print(" times\n");
+  for (int j = 0; j < num_tests; j++) {
+    for (int i = 0; i < n; i++)
+      A[i] = rand(gen);
+    qsort(A, 0, n);
+    assert(is_sorted(A, 0, n));
+  }
+  print("All tests passed!\n");
+  return 0;
+}

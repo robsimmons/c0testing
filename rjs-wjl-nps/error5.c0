@@ -1,0 +1,12 @@
+//test failure
+//test -d => failure
+#use <conio>
+
+int main() {
+  int[] a = *alloc(int[]);
+  //@assert \length(a) == 0;
+  if (5 < 12) 
+    error(*alloc(string));
+  else
+    return 0;
+}

@@ -1,0 +1,11 @@
+//test error_typecheck
+/* Dynamically safe, statically wrong */
+
+int main () {
+  int x = 4;
+  if (x > 4) {
+    return true + 4;
+  } else {
+    return 1 + 4;
+  }
+}

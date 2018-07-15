@@ -1,0 +1,11 @@
+//test return 4
+// allowed as of Jan 2011
+
+int main() {
+
+  int i = 1; 
+  i++;
+  int j = 2;
+  return i + j;
+
+}

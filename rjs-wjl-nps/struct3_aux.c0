@@ -1,0 +1,32 @@
+struct nothing {};
+
+struct nat { struct nat * x; };
+
+struct node { 
+  int value;
+  struct node * next;
+};
+
+typedef struct node * node;
+
+node newnode(int value) {
+  node n = alloc(struct node);
+  n->value = value; 
+  return n;
+}
+
+void link(node n1, node n2) {
+  if (n1->next == NULL) {
+    n1->next = n2;
+  } else { 
+    link(n1->next, n2);
+  } 
+}
+
+int nth(node n, int i) {
+  if (i <= 0) 
+    return n->value;
+  else 
+    return nth(n->next, i-1);
+}
+

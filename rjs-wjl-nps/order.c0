@@ -1,0 +1,16 @@
+//test return 1
+/* Sensitive to order of evaluation */
+/* Also assumes that allocated memory is initial set to default values */
+/* Order of evaluation not defined in C, and frequently is backwards.  */
+
+void foo(int i, int j) {}
+
+int bar(int* x, int* y) { if (*x == *y) (*x)++; return -1; }
+
+int main() {
+  int* i = alloc(int);
+  int* j = alloc(int);
+  foo(bar(i,j), bar(j,i));
+  if (*i > *j) return 1;
+  else return -1;
+}

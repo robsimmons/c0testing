@@ -1,0 +1,11 @@
+//test return -2072745074
+
+// Tests modular overflow
+
+int main() {
+  int i = 1111111111;
+  int j = -1111111111;
+  int k = i + i;
+  if (-k == j + j) { return k; }
+  return 0;
+}

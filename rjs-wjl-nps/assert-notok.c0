@@ -1,0 +1,14 @@
+//test -d => abort
+//test return 15
+// Expected behavior: assertion failure (if compiled with -d)
+
+int main () {
+
+  bool i_am_awesome = true;
+  bool so_are_you = true;
+
+  //@ assert i_am_awesome;
+  //@ assert i_am_awesome && !so_are_you;
+  return 15;
+
+}

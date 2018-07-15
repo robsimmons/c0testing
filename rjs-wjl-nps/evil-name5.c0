@@ -1,0 +1,12 @@
+//test -d => abort
+int foo (int cc0_string_fromliteral)
+//@ensures \result > \result;
+{
+  return cc0_string_fromliteral + 1;
+}
+
+int main ()
+{
+  return foo(1);
+}
+

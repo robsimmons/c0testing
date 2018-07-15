@@ -1,0 +1,8 @@
+//test return 125
+int main() {
+  int i = 0;
+  int* j = alloc(int);
+  int* k = NULL;
+  *j = 5; 
+  return *j**j**j;
+}

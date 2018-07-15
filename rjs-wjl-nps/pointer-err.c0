@@ -1,0 +1,12 @@
+//test error_parse
+int main() {
+  int i = 0;
+  int* j = alloc(int);
+  int* k = NULL;
+  int** l = alloc(int*);
+  k = j;
+  (*l) = k;
+  (*k) = 5;
+  (*j) = ((**l) + 1);
+  return *l + *k + *j;
+}

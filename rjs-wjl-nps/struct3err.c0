@@ -1,0 +1,23 @@
+//test -fstruct3_aux.c0 => memerror
+
+struct node;
+node newnode(int value);
+void link(node n1, node n2);
+int nth(node n1, int i);
+
+int main () {
+  int i;
+  struct node* a = newnode(1);
+  struct node* b = newnode(2);
+  struct node* c = newnode(3);
+  struct node* d = newnode(4);
+
+  link(a,b);
+  link(c,d);
+  link(a,c);
+  for(i = 0; i <= 4; i++)
+    if (nth(a,i) != i + 1)
+      return -1;
+
+  return 1;
+}

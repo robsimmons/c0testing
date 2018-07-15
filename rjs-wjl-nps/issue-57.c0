@@ -1,0 +1,24 @@
+//test memerror
+int bar(struct wrapper *foo);
+
+struct wrapper {
+  struct s *undef;
+};
+
+int main()
+{
+  struct wrapper *blah = alloc(struct wrapper);
+
+  return bar(blah);
+}
+
+struct s {
+  int a;
+};
+
+int bar(struct wrapper *foo)
+{
+  foo->undef->a = 10;
+
+  return foo->undef->a;
+}

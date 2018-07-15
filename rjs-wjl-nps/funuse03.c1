@@ -1,0 +1,15 @@
+//test error_parse
+// Good error message would look like:
+// 'f' is a function pointer but it is not dereferenced (try '(*f)')
+
+typedef bool fn(int x, int y);
+
+bool eq(int x, int y) { return x == y; }
+
+int main() {
+  fn* f = &eq;
+  int i = 0;
+  i += (f)(0,0) ? 1 : 0;
+  i += (f)(0,2) ? 2 : 0;
+  return i;
+}

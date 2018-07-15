@@ -1,0 +1,5 @@
+//test error_typecheck
+int main() {
+  4 + 3;
+  return i;
+}

@@ -1,0 +1,9 @@
+//test return 0
+/* attempts to trigger a segfault if alloc_array allocates incorrectly
+ * (bare runtime had a rounding error dividing elemsize by 4) */
+int main() {
+    char[] a = alloc_array(char, 100000000);
+    a[99999999] = 'z';
+    if (a[99999999] != 'z') return -1;
+    return 0;
+}

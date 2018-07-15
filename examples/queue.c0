@@ -1,0 +1,88 @@
+//test return 1
+// queue_elem must be defined
+
+typedef int queue_elem;
+typedef struct queue* queue;
+
+// void assert(bool cond, string msg) {}
+
+struct queue {
+  int size;
+  int front;
+  int back;
+  queue_elem default_elem;
+  queue_elem[] Q;
+};
+
+bool is_queue (queue q)
+//@requires q->size == \length(q->Q);
+{
+  return true;
+}
+
+bool is_empty (queue q)
+//@requires is_queue(q);
+{
+  return q->front == q->back;
+}
+
+queue new_queue (int n)
+//@requires 0 < n;
+//@ensures is_queue(\result) && is_empty(\result);
+{
+  queue q = alloc(struct queue);
+  q->size = n+1; /* more clever solution? */
+  q->front = 0;
+  q->back = 0;
+  /* q->default_elem is what it is! */
+  q->Q = alloc_array(queue_elem, n+1);
+  return q;
+}
+
+bool is_full (queue q)
+//@requires is_queue(q);
+{
+  return (q->back - q->front) % q->size == q->size-1;
+}
+
+int max_length (queue q)
+//@requires is_queue(q);
+{
+  return q->size-1;
+}
+
+int length (queue q)
+//@requires is_queue(q);
+{
+  return (q->back - q->front) % q->size;
+}
+
+void enq (queue_elem x, queue q)
+//@requires is_queue(q) && !is_full(q);
+// modifies q;
+//@ensures is_queue(q);
+{
+  // assert(!is_full(q),"queue is full");
+  q->Q[q->back] = x;
+  q->back = (q->back + 1) % q->size;
+}
+
+queue_elem deq (queue q)
+//@requires is_queue(q) && !is_empty(q);
+// modifies q;
+//@ensures is_queue(q);
+{
+  // assert(!is_empty(q),"queue is empty");
+  queue_elem x = q->Q[q->front];
+  q->Q[q->front] = q->default_elem; /* avoid space leak */
+  q->front = (q->front + 1) % q->size;
+  return x;
+}
+
+int main() {
+  queue q = new_queue(3);
+  enq(1,q);
+  enq(2,q);
+  enq(3,q);
+  return deq(q);
+}

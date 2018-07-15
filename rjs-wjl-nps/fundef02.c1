@@ -1,0 +1,9 @@
+//test error_parse
+// Expected the name of this function type, got a '('
+typedef bool (int x, int y);
+
+bool eq(int x, int y) { return 0; }
+
+int main() {
+  return 0;
+}

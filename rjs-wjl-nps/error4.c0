@@ -1,0 +1,7 @@
+//test failure
+int main() {
+  if (1 < 2)
+    error("ohnoz");
+  else
+    error("ohnoz");
+}

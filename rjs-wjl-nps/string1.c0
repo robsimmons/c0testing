@@ -1,0 +1,14 @@
+//test return 1
+
+int main () {
+
+  string s;
+  string[] A = alloc_array(string, 10);
+  A[0] = "Hello";
+  A[1] = "World";
+  A[2] = "It Is A Great Day";
+  s = A[2];
+  s = A[3];
+  return 1;
+
+}

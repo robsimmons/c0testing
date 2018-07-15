@@ -1,0 +1,8 @@
+//test memerror
+
+// Allocates an integer pointer pointer (default value null), dereferences it
+
+int main() {
+  int** i = alloc(int*);
+  return **i;
+}

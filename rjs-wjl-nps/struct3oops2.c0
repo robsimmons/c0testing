@@ -1,0 +1,30 @@
+//test -fstruct3_aux.c0 => return -1
+struct node;
+
+struct node * newnode(int value);
+void link(struct node * n1, struct node * n2);
+int nth(struct node * n1, int i);
+
+int main () {
+  int i; int j;
+  int size = 8;
+  struct node * [] A = alloc_array(struct node *, size);
+
+  for(i = 0; i < size; i++)
+    A[i] = newnode(i+1);
+
+  link(A[0], A[1]); /* 01 2 3 4 5 6 7 */
+  link(A[2], A[3]); /* 01 23 4 5 6 7 */ 
+  link(A[4], A[5]); /* 01 23 45 6 7 */
+//link(A[0], A[2]); /* 01 23 45 6 7 */
+  link(A[5], A[6]); /* 01 23 456 7 */
+  link(A[0], A[4]); /* 01456 23 7 */
+  link(A[3], A[7]); /* 01457 237 */
+
+  for(i = 0; i < size; i++)
+    for(j = 0; j < size-i; j++) 
+      if (nth(A[i], j) != i + j + 1)
+        return -1;
+
+  return 1;
+}

@@ -1,0 +1,11 @@
+//test error_parse
+int main() {
+  int i = 0;
+  int[] A = alloc_array(int, 5);
+
+  A[i++] = 4;
+  A[i++] = 5;
+  A[i++] = 7;
+
+  return A[0] + A[1] + A[2];
+}

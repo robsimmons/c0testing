@@ -1,0 +1,2 @@
+//test error_typecheck
+void main() { return 1; }

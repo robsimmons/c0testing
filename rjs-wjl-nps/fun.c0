@@ -1,0 +1,12 @@
+//test return 2
+int incr(int a) {
+  int c = a + 2;
+  return c - 1;   
+}
+
+int main() {
+  if (incr(5) != 6) 
+    { return 1; }
+  else 
+    { return 2; }
+}

@@ -1,0 +1,12 @@
+//test return 0
+int main () {
+  string s;
+  char[] c = alloc_array(char, 4);
+  s = "a\tbc\n";
+  c[0] = 'a';
+  c[1] = '\n';
+  c[2] = 'x';
+  s = "b\t\t\b";
+  /* c = '\0'; */
+  return 0;
+}

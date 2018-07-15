@@ -1,0 +1,12 @@
+//test -limg => return 400
+int main () {
+
+  int width = 200;
+  int height = 300;
+  image_t img1 = image_create(width, height);
+  image_t img2 = image_clone(img1);
+  int width1 = image_width(img1);
+  int width2 = image_width(img2);
+  return image_width(img1) + image_width(img2);
+
+}

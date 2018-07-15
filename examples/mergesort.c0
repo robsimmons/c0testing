@@ -1,0 +1,103 @@
+//test return 9
+/* Mergesort */
+
+int min(int x, int y) {
+  return x < y ? x : y;
+}
+
+bool sorted (int[] A, int lower, int upper)
+//@requires 0 <= lower && lower < upper && upper <= \length(A);
+{
+  int i;
+  for (i = lower; i < upper-1; i++)
+    //@loop_invariant lower <= i && i < upper-1;
+    if (A[i] > A[i+i]) return false;
+  return true;
+}
+
+bool equal (int[] A, int[] B, int n)
+//@requires n <= \length(A) && n <= \length(B);
+{
+  int i;
+  for (i = 0; i < n; i++)
+    if (A[i] != B[i]) return false;
+  return true;
+}
+
+void copy (int[] dst, int[] src, int n)
+//@requires n <= \length(dst) && n <= \length(src);
+// modifies dst;
+//@ensures equal(dst, src, n);
+{
+  int i;
+  for (i = 0; i < n; i++)
+    dst[i] = src[i];
+}
+
+void merge (int[] A, int[] B, int lower, int mid, int upper)
+//@requires 0 <= lower && lower < mid && mid <= upper;
+//@requires upper <= \length(A) && upper <= \length(B);
+//@requires sorted(A, lower, mid) && sorted(A, mid, upper);
+// modifies B;
+//@ensures sorted(B, lower, upper);
+{
+  int k = lower;
+  int i = lower;
+  int j = mid;
+  while (k < upper)
+    //@loop_invariant lower <= i && i <= mid;
+    //@loop_invariant mid <= j && j <= upper;
+    //@loop_invariant lower <= k && k <= upper;
+    { if (i < mid && (!(j < upper) || A[i] <= A[j])) {
+        // this asymmetry makes the sort stable?
+        B[k] = A[i];
+        k++; i++;
+      } else {
+        B[k] = A[j];
+        k++; j++;
+      }
+    }
+  //@assert k == upper;
+  {}
+}
+
+void msort (int[] A, int n)
+//@requires n <= \length(A);
+// modifies A;
+//@ensures sorted(A, 0, n);
+{
+  int[] B = A;
+  int[] C = alloc_array(int, n);
+  int step = 1;
+  while (step < n) {
+    int lower = 0;
+    while (lower < n) {
+      int mid = min(lower+step,n);
+      int upper = min(mid+step,n);
+      merge(B, C, lower, mid, upper); // avoid calling merge here some time?
+      lower = upper;
+    }
+    { int[] D = B; B = C; C = D; }
+    step = 2*step;
+    //@assert sorted(B, 0, min(step,n));
+    {}
+  }
+  if (A != B) copy(A, B, n); // copy C back to A if necessary
+}
+
+int sum (int[] A, int n) {
+  int i;
+  int sum = 0;
+  for (i = 0; i < n; i++) {
+    sum = sum*10+A[i];
+  }
+  return sum;
+}
+
+int main() {
+  int[] A = alloc_array(int,9);
+  A[0] = 8; A[1] = 2; A[2] = 9; A[3] = 7; A[4] = 1;
+  A[5] = 3; A[6] = 4; A[7] = 6; A[8] = 5;
+  msort(A, 9);
+  return(A[8]);
+}

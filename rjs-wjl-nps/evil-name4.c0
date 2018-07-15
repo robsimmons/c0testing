@@ -1,0 +1,12 @@
+//test -d => abort
+int foo (int cc0_assert)
+//@ensures \result > \result;
+{
+  return cc0_assert + 1;
+}
+
+int main ()
+{
+  return foo(1);
+}
+

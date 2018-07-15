@@ -1,0 +1,13 @@
+//test return 0
+//test -d => return 0
+
+bool is_move(int m) {
+  return true;
+}
+
+int main()
+//@requires is_move(1);
+{
+  return 0;
+}
+

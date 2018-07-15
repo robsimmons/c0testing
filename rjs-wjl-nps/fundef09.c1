@@ -1,0 +1,9 @@
+//test error_parse
+// Legal C, but not allowed in C1
+typedef bool (*fn)(int x, int x);
+
+bool eq(int x, int y) { return 0; }
+
+int main() {
+  return 0;
+}

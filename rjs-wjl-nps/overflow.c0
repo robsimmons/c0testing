@@ -1,0 +1,12 @@
+//test return 3
+int main() {
+  int x = 7;
+  int z = 5; 
+
+  while (z > 2) {
+    x = x + z;
+    z += 2;
+  } 
+
+  return x;
+}

@@ -1,0 +1,7 @@
+//test return 8
+int main () {
+  int x = 6;
+  x++;
+  int y = x + 1;
+  return y;
+}

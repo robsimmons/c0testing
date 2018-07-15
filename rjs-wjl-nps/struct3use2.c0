@@ -1,0 +1,32 @@
+//test return 1
+
+#use "struct3_aux.c0"
+
+struct node;
+node newnode(int value);
+void link(node n1, node n2);
+int nth(node n1, int i);
+
+int main () {
+  int i; int j;
+  int size = 8;
+  node[] A = alloc_array(node, size);
+
+  for(i = 0; i < size; i++)
+    A[i] = newnode(i+1);
+
+  link(A[0], A[1]); /* 01 2 3 4 5 6 7 */
+  link(A[2], A[3]); /* 01 23 4 5 6 7 */ 
+  link(A[4], A[5]); /* 01 23 45 6 7 */
+  link(A[0], A[2]); /* 0123 45 6 7 */
+  link(A[5], A[6]); /* 0123 456 7 */
+  link(A[0], A[4]); /* 0123456 7 */
+  link(A[3], A[7]); /* 01234567 */
+
+  for(i = 0; i < size; i++)
+    for(j = 0; j < size-i; j++) 
+      if (nth(A[i], j) != i + j + 1)
+        return -1;
+
+  return 1;
+}

@@ -1,0 +1,4 @@
+//test error
+typedef int elem;
+#use "goofy-typedef_aux.c0"
+int main() { return f(16); }

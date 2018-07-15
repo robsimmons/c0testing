@@ -1,0 +1,8 @@
+//test aritherror
+
+// Tests the behavior of INT_MIN/-1
+
+int main() {
+  int i = -2147483647 - 1;
+  return i/-1;
+}

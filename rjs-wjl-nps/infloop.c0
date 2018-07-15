@@ -1,0 +1,13 @@
+//test infloop
+int main() {
+  int x = 7;
+  int z = 5; 
+
+  while (true) {
+    x = x + z;
+    z += 1;
+  } 
+
+  return x;
+}
+

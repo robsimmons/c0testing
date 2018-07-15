@@ -1,0 +1,5 @@
+//test -lstring => return 12
+int main() {
+  string s = "Hey there!";
+  return 0;
+}

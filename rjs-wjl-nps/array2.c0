@@ -1,0 +1,15 @@
+//test return 25
+
+int main() {
+
+  int i = 1;
+  int[] arr = alloc_array(int,5);
+  arr[0] = 1;
+  arr[1] = 4;
+  arr[2] = 9;
+  arr[3] = 16;
+  arr[4] = 25;
+
+  return arr[4];
+  
+}

@@ -1,0 +1,7 @@
+//test return 1
+int main() {
+  int _tmp1;
+  int _tmp_1;
+  int* i = alloc(int);
+  return 1;
+}

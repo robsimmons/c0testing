@@ -1,0 +1,10 @@
+//test -lstring => return 12
+int main () {
+
+  string s = "asdf";
+  int i = string_length(s);
+  string t = string_join(s,s);
+  int j = string_length(t);
+  return i + j;
+
+}

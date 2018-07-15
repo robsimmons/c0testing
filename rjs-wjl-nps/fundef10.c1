@@ -1,0 +1,13 @@
+//test error_parse
+typedef bool (*fn)(int x, int y);
+
+bool eq(int x, int y) { return 0; }
+
+int main() {
+  int i = 0;
+  i += (*eq)(0,0) ? 1 : 0;
+  i += (*eq)(0,2) ? 1 : 0;
+  i += (*eq)(2,0) ? 1 : 0;
+  i += (*eq)(2,2) ? 1 : 0;
+  return 0;
+}

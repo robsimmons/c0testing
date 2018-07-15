@@ -1,0 +1,43 @@
+//test error_parse
+struct node { 
+  int value;
+  struct node* next;
+};
+
+typedef struct node * node;
+
+node newnode(int value) {
+  node n = alloc(struct node);
+  n->value = value; 
+  return n; 
+}
+
+int main() {
+  int i = 0;
+  int num = 9;
+  node head = alloc(struct node);
+  node tail = head;
+
+  while(i < num) {
+    node* old_tail = tail;     // Type error here, involving typedef
+    tail = alloc(struct node);
+    (old_tail->value) = i;
+    (old_tail->next) = tail;
+    i = i + 1;
+  }   
+  tail->value = num;
+  tail->next = head;
+
+  i += head->value;
+  i += head->next->value;
+  i += head->next->next->value;
+  i += head->next->next->next->value;
+  i += head->next->next->next->next->value;
+  i += head->next->next->next->next->next->value;
+  i += head->next->next->next->next->next->next->value;
+  i += head->next->next->next->next->next->next->next->value;
+  i += head->next->next->next->next->next->next->next->next->value;
+  i += head->next->next->next->next->next->next->next->next->next->value;
+  i += head->next->next->next->next->next->next->next->next->next->next->value;
+  return i;
+}

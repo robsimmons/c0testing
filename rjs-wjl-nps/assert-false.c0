@@ -1,0 +1,5 @@
+//test abort
+int main() {
+  assert(false); // "Nothing's okay!"
+  return 0;
+}

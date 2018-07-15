@@ -1,0 +1,16 @@
+//test return 30
+int foo(int a, int b) {
+  return (a + b) * 2;
+}
+
+int main() {
+  int x = 7;
+  int z = 0; 
+
+  while (z < 2) {
+    x = foo(x,z);
+    z++;
+  } 
+
+  return x;
+}

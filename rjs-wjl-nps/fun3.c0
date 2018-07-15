@@ -1,0 +1,31 @@
+//test return 1
+int add(int a, int b) {
+  int c = a + 1;
+  int d = b - 1;
+  return c + d;
+}
+
+int mul(int a, int b) {
+  if (a == 0) { return 0; }
+  else { return add(b, mul(a - 1, b)); }
+}
+
+int main() {
+  int x;
+
+  x = mul(0,5);
+  if (x != 0) return -1; 
+
+  x = mul(6,0);
+  if (x != 0) return -1;
+  x = mul(1,5);
+  if (x != 5) return -1;
+
+  x = mul(6,1);
+  if (x != 6) return -1;
+
+  x = mul(5,5);
+  if (x != 25) return -1;
+
+  return 1;
+}

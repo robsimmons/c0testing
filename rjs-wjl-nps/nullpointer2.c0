@@ -1,0 +1,16 @@
+//test memerror
+/* Null pointer */
+
+int main() {
+  int* i = NULL;
+  int* j = alloc(int);
+  int* k;
+
+  k = j;
+  *k += 1;
+ 
+  k = i;
+  *k += 1;
+   
+  return *i;
+}

@@ -1,4 +1,4 @@
-//test error_runtime
+//test failure
 
 int illegal(char c) {
   error("illegal character");

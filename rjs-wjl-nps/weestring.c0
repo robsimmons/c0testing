@@ -1,0 +1,4 @@
+//test -lstring => return 68
+int main() {
+  return char_ord('"') + char_ord('\"');
+}

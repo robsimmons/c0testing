@@ -1,0 +1,17 @@
+//test return 1
+
+// Tests that everything is allocated to its default values
+
+#use <string>
+
+int main() {
+  int *i = alloc(int);
+  bool *b = alloc(bool);
+  char *c = alloc(char);
+  string *s = alloc(string);
+  int **p = alloc(int*);
+  if (*i == 0 && *b == false && *c == '\0' && *p == NULL && string_equal(*s, "")) 
+    return 1;
+  else
+    return 0;
+}

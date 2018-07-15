@@ -1,0 +1,25 @@
+//test return 6
+/* Not a bad idea to make this actually typecheck */
+
+struct j { 
+  int value;
+  struct j* next;
+};
+
+typedef struct j some_struct;
+
+int main() {
+  int i = 0;   
+  some_struct* j = alloc(some_struct);
+  some_struct* k = alloc(some_struct);
+  some_struct* l = alloc(some_struct);
+  (j->value) = 1;
+  (j->next) = k;
+  (k->value) = 2;
+  (k->next) = l;
+  (l->value) = 3;
+  (l->next) = j;
+  return j->next->next->next->next->next->next->value
+       + j->next->next->next->next->next->next->next->value
+       + j->next->next->next->next->next->next->next->next->value;
+} 

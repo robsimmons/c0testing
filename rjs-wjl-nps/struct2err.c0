@@ -1,0 +1,27 @@
+//test error_parse
+/* Fails because nodey is parsed as an identifier in the while loop. */
+
+struct nodey { 
+  int value;
+  struct node* next;
+};
+
+typedef struct nodey * node;
+
+node newnode(int value) {
+  node n = alloc(struct node);
+  n->value = value; 
+}
+
+void main() {
+  int i = 0;
+  int num = 9;
+  node head = alloc(struct nodey);
+  node tail = head;
+
+  while(i < num) {
+    nodey * old_tail = tail;
+  }   
+
+  return i;
+}

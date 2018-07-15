@@ -9,14 +9,14 @@ one or more lines at the beginning of the file begin with `//test`.
 
 ```
 <test> ::= //test [<arg>* =>] <spec> \n
-<arg>  ::= -l<lib> | -d | --no-purity-check | --standard=<lang>
+<arg>  ::= -l<lib> | -d | -f<filename> --no-purity-check | --standard=<lang>
 <lang> ::= l1 | l2 | l3 | l4 | c0 | c1
 <spec> ::= return <num>      - Should return a specific quantity
          | error_parse       - Fails to parse
          | error_typecheck   - Fails on typechecking
          | error_static      - Fails on static analysis (purity checking)
-         | error_runtime     - Calls the error() function
          | error             - Fails in any of the error categories above
+         | failure           - Calls the error() function
          | div-by-zero       - Arithmetic error
          | aritherror        - Arithmetic error (alias of div-by-zero)
          | infloop           - Should run, but will time out

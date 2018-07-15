@@ -1,0 +1,79 @@
+//test return 46340
+// integer square root etc.
+
+int isqrt (int x)
+//@ensures 0 <= \result * \result && \result * \result <= x;
+//@ensures x < (\result+1) * (\result+1) || (\result+1) * (\result+1) < 0;
+{ int i = 0; int i2 = 0;
+  // if (x < 0) warn("x negative; returning -1");
+  while (0 <= i2 && i2 <= x) {
+    i = i + 1;
+    i2 = i * i;
+  }
+  return i-1;
+}
+
+int isqrt2 (int x)
+{ int i = 0; int i2 = 0;
+  while (0 <= i2 && i2 <= x) {
+    i2 = i2 + 2*i + 1;
+    i = i + 1;
+  }
+  return i-1;
+}
+
+int isqrt3 (int x)
+{ int i = 0; int i2 = 0; int di = 0;
+  while (0 <= i2 && i2 <= x) {
+    i2 = i2 + di + 1;
+    di = di + 2;
+    i = i + 1;
+  }
+  return i-1;
+}
+
+int isqrt4 (int x)
+{ int i2 = 0; int di = 0;
+  while (0 <= i2 && i2 <= x) {
+    i2 = i2 + di + 1;
+    di = di + 2;
+  }
+  return (di-2)/2;
+}
+
+int isqrt5 (int x)
+{
+  int op = x;
+  int res = 0;
+  int one = 1 << 30;
+  while (one > op)
+    one >>= 2;
+  while (one != 0)
+    //@loop_invariant res * res + op == x;
+    {
+    if (op >= res + one) {
+      op -= res + one;        /* op = op-(res+one) */
+      res = (res >> 1) + one; /* res = res/2+one */
+    }
+    else
+      res >>= 1;              /* res = res/2; */
+    one >>= 2;
+  }
+  // (res/2+one)*(res/2+one) = res*res/4+res*one+one*one, one = one/4, op = op - (res+one);
+  // (res/2)*(res/2) = res*res/4, one = one/4, op = op;
+  // next assertion is wrong for modular arithmetic
+  //@assert res * res <= x && x < (res+1)*(res+1) && res * res + op == x;
+  // perhaps better:
+  //@assert res * res + op == x && 0 <= op && op < 2*res+1;
+  return res;
+}
+
+int main () {
+  int int_max = 0x7FFFFFFF;
+  int i;
+  assert(isqrt(-15122) == -1); // "wrong answer on negative number"
+  for (i = 0; i < 256; i++)
+    assert(isqrt(i) == isqrt5(i)); // "Wrong answer"
+  assert(isqrt(int_max) == isqrt5(int_max)); // "Wrong on int_max"
+  return isqrt5(int_max);
+}

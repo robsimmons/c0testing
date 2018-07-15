@@ -1,0 +1,11 @@
+//test return 5
+
+// Tests small negative offsets
+
+int main() {
+  int i = 0;
+  while(i < 5) {
+    i++;
+  }
+  return i;
+}

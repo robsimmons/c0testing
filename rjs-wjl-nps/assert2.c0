@@ -1,0 +1,21 @@
+//test return 15
+// Confused about this test, accepted according to the revision 520 
+// spec but rejected by both parsers.
+
+int main () {
+
+  int i;
+
+  //@ 
+  i = 12;
+
+  //@ assert true;
+  i++;
+
+  //@
+  i++;
+
+  //@ assert 1 < 2; assert true; assert (true || false); assert (true && true);
+  return 15;
+
+}

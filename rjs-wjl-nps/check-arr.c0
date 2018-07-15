@@ -1,0 +1,19 @@
+//test -d => return 1
+
+// Tests isolation of results
+
+int one() { return 1; }
+
+int[] foo()
+//@ensures \length(\result) > 0;
+//@ensures \result[one()] == 0;
+{
+  int[] A = alloc_array (int, 2);
+  return A;
+}
+
+int main ()
+{
+  int[] A = foo();
+  return 1;
+}

@@ -1,0 +1,12 @@
+//test return 15
+
+int main() {
+
+  bool i_am_awesome = true;
+  bool so_are_you = true;
+
+  //@ assert i_am_awesome;
+  //@ assert i_am_awesome && so_are_you;
+  return 15;
+
+}

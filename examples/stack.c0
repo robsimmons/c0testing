@@ -1,0 +1,60 @@
+//test return 2
+// needs: t_elem must be defined
+
+typedef int t_elem;
+typedef struct list* list;
+typedef list* stack;
+
+struct list {
+  t_elem head;
+  list tail;
+};
+
+bool is_empty (stack s) {
+  return *s == NULL;
+}
+
+stack new_stack ()
+//@ensures is_empty(\result);
+{
+  stack s = alloc(list);
+  *s = NULL;
+  return s;
+}
+
+t_elem top (stack s);
+
+void push (t_elem x, stack s)
+// modifies s;
+//@ensures top(s) == x;
+{
+  list l = alloc(struct list);
+  l->head = x;
+  l->tail = *s;
+  *s = l;
+}
+
+t_elem pop (stack s)
+//@requires !is_empty(s);
+// modifies s;
+{
+  t_elem top = (*s)->head;
+  *s = (*s)->tail;
+  return top;
+}
+
+t_elem top (stack s)
+//@requires !is_empty(s);
+{
+  return (*s)->head;
+}
+
+
+int main() {
+  stack s = new_stack();
+  push(1,s);
+  push(2,s);
+  push(3,s);
+  pop(s);
+  return top(s);
+}

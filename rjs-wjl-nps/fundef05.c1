@@ -1,0 +1,9 @@
+//test error_parse
+// Expected a type, got a '('
+typedef (bool) fn(int, int);
+
+bool eq(int x, int y) { return 0; }
+
+int main() {
+  return 0;
+}

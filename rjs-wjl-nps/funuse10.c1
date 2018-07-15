@@ -1,0 +1,18 @@
+//test return 1
+// This should work
+
+typedef bool fn(int x, int y);
+
+bool eq(int x, int y) { return x == y; }
+
+bool apply(fn* f, int x, int y) {
+  return (*f)(x, y);
+}
+
+int main() {
+  fn *f = &eq;
+  int i = 0;
+  i += apply(f,0,0) ? 1 : 0;
+  i += apply(f,0,2) ? 2 : 0;
+  return i;
+}
