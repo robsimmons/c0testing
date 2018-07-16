@@ -1,0 +1,16 @@
+/* 
+ * A header file describe a library that can't possibly be implemented
+ *
+ * A (n, m) busy beaver turing machine with n symbols and m states
+ * that has n symbols and m states and, when run starting from a blank
+ * tape, takes more steps than any other turing machine with n symbols
+ * and m states. Therefore, computing things about the (n, m) busy
+ * beaver is undecidable.
+ *
+ * https://en.wikipedia.org/wiki/Busy_beaver
+ */
+
+// busy_beaver(n, m) 
+// Returns the number of steps that the (n, m) busy beaver takes
+// before terminating (mod 3^32).
+int busy_beaver(int symbols, int states);

@@ -1,0 +1,14 @@
+//test typecheck
+
+// Uses the busy.h0 header file, which describes a library that can't
+// possibly be implemented.
+
+int main() {
+   // According to Wikipedia...
+   assert(6 == busy_beaver(2, 2));
+   assert(21 == busy_beaver(2, 3));
+   assert(107 == busy_beaver(2, 4));
+   
+   // This value is unknown (according to Wikipedia in October 2015)
+   return busy_beaver(4, 2);
+}
