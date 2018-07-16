@@ -1,4 +1,4 @@
-//test error_parse
+//test error_typecheck
 struct node { 
   int value;
   struct node* next;
