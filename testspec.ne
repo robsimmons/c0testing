@@ -8,7 +8,7 @@ Arg   -> "-l" [a-zA-Z_]:+
        | "--no-purity-check"
        | "--standard" _ "=" _ Lang
 Lang  -> "l1" | "L1" | "l2" | "L2" | "l3" | "L3" | "l4" | "L4" | "c0" | "C0" | "c1" | "C1" 
-Spec  -> "return" _ "-":? [0-9]:+
+Spec  -> "return" _ ("-" | "~"):? [0-9]:+
        | "error_parse"
        | "error_typecheck"
        | "error_static"
