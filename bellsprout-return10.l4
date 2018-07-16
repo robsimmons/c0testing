@@ -1,0 +1,521 @@
+//test return 10
+
+typedef int t0;
+typedef t0* t1;
+typedef t1* t2;
+typedef t2* t3;
+typedef t3* t4;
+typedef t4* t5;
+typedef t5* t6;
+typedef t6* t7;
+typedef t7* t8;
+typedef t8* t9;
+typedef t9* t10;
+typedef t10* t11;
+typedef t11* t12;
+typedef t12* t13;
+typedef t13* t14;
+typedef t14* t15;
+typedef t15* t16;
+typedef t16* t17;
+typedef t17* t18;
+typedef t18* t19;
+typedef t19* t20;
+typedef t20* t21;
+typedef t21* t22;
+typedef t22* t23;
+typedef t23* t24;
+typedef t24* t25;
+typedef t25* t26;
+typedef t26* t27;
+typedef t27* t28;
+typedef t28* t29;
+typedef t29* t30;
+typedef t30* t31;
+typedef t31* t32;
+typedef t32* t33;
+typedef t33* t34;
+typedef t34* t35;
+typedef t35* t36;
+typedef t36* t37;
+typedef t37* t38;
+typedef t38* t39;
+typedef t39* t40;
+typedef t40* t41;
+typedef t41* t42;
+typedef t42* t43;
+typedef t43* t44;
+typedef t44* t45;
+typedef t45* t46;
+typedef t46* t47;
+typedef t47* t48;
+typedef t48* t49;
+typedef t49* t50;
+typedef t50* t51;
+typedef t51* t52;
+typedef t52* t53;
+typedef t53* t54;
+typedef t54* t55;
+typedef t55* t56;
+typedef t56* t57;
+typedef t57* t58;
+typedef t58* t59;
+typedef t59* t60;
+typedef t60* t61;
+typedef t61* t62;
+typedef t62* t63;
+typedef t63* t64;
+typedef t64* t65;
+typedef t65* t66;
+typedef t66* t67;
+typedef t67* t68;
+typedef t68* t69;
+typedef t69* t70;
+typedef t70* t71;
+typedef t71* t72;
+typedef t72* t73;
+typedef t73* t74;
+typedef t74* t75;
+typedef t75* t76;
+typedef t76* t77;
+typedef t77* t78;
+typedef t78* t79;
+typedef t79* t80;
+typedef t80* t81;
+typedef t81* t82;
+typedef t82* t83;
+typedef t83* t84;
+typedef t84* t85;
+typedef t85* t86;
+typedef t86* t87;
+typedef t87* t88;
+typedef t88* t89;
+typedef t89* t90;
+typedef t90* t91;
+typedef t91* t92;
+typedef t92* t93;
+typedef t93* t94;
+typedef t94* t95;
+typedef t95* t96;
+typedef t96* t97;
+typedef t97* t98;
+typedef t98* t99;
+typedef t99* t100;
+typedef t100* t101;
+typedef t101* t102;
+typedef t102* t103;
+typedef t103* t104;
+typedef t104* t105;
+typedef t105* t106;
+typedef t106* t107;
+typedef t107* t108;
+typedef t108* t109;
+typedef t109* t110;
+typedef t110* t111;
+typedef t111* t112;
+typedef t112* t113;
+typedef t113* t114;
+typedef t114* t115;
+typedef t115* t116;
+typedef t116* t117;
+typedef t117* t118;
+typedef t118* t119;
+typedef t119* t120;
+typedef t120* t121;
+typedef t121* t122;
+typedef t122* t123;
+typedef t123* t124;
+typedef t124* t125;
+typedef t125* t126;
+typedef t126* t127;
+typedef t127* t128;
+typedef t128* t129;
+typedef t129* t130;
+typedef t130* t131;
+typedef t131* t132;
+typedef t132* t133;
+typedef t133* t134;
+typedef t134* t135;
+typedef t135* t136;
+typedef t136* t137;
+typedef t137* t138;
+typedef t138* t139;
+typedef t139* t140;
+typedef t140* t141;
+typedef t141* t142;
+typedef t142* t143;
+typedef t143* t144;
+typedef t144* t145;
+typedef t145* t146;
+typedef t146* t147;
+typedef t147* t148;
+typedef t148* t149;
+typedef t149* t150;
+typedef t150* t151;
+typedef t151* t152;
+typedef t152* t153;
+typedef t153* t154;
+typedef t154* t155;
+typedef t155* t156;
+typedef t156* t157;
+typedef t157* t158;
+typedef t158* t159;
+typedef t159* t160;
+typedef t160* t161;
+typedef t161* t162;
+typedef t162* t163;
+typedef t163* t164;
+typedef t164* t165;
+typedef t165* t166;
+typedef t166* t167;
+typedef t167* t168;
+typedef t168* t169;
+typedef t169* t170;
+typedef t170* t171;
+typedef t171* t172;
+typedef t172* t173;
+typedef t173* t174;
+typedef t174* t175;
+typedef t175* t176;
+typedef t176* t177;
+typedef t177* t178;
+typedef t178* t179;
+typedef t179* t180;
+typedef t180* t181;
+typedef t181* t182;
+typedef t182* t183;
+typedef t183* t184;
+typedef t184* t185;
+typedef t185* t186;
+typedef t186* t187;
+typedef t187* t188;
+typedef t188* t189;
+typedef t189* t190;
+typedef t190* t191;
+typedef t191* t192;
+typedef t192* t193;
+typedef t193* t194;
+typedef t194* t195;
+typedef t195* t196;
+typedef t196* t197;
+typedef t197* t198;
+typedef t198* t199;
+typedef t199* t200;
+typedef t200* t201;
+typedef t201* t202;
+typedef t202* t203;
+typedef t203* t204;
+typedef t204* t205;
+typedef t205* t206;
+typedef t206* t207;
+typedef t207* t208;
+typedef t208* t209;
+typedef t209* t210;
+typedef t210* t211;
+typedef t211* t212;
+typedef t212* t213;
+typedef t213* t214;
+typedef t214* t215;
+typedef t215* t216;
+typedef t216* t217;
+typedef t217* t218;
+typedef t218* t219;
+typedef t219* t220;
+typedef t220* t221;
+typedef t221* t222;
+typedef t222* t223;
+typedef t223* t224;
+typedef t224* t225;
+typedef t225* t226;
+typedef t226* t227;
+typedef t227* t228;
+typedef t228* t229;
+typedef t229* t230;
+typedef t230* t231;
+typedef t231* t232;
+typedef t232* t233;
+typedef t233* t234;
+typedef t234* t235;
+typedef t235* t236;
+typedef t236* t237;
+typedef t237* t238;
+typedef t238* t239;
+typedef t239* t240;
+typedef t240* t241;
+typedef t241* t242;
+typedef t242* t243;
+typedef t243* t244;
+typedef t244* t245;
+typedef t245* t246;
+typedef t246* t247;
+typedef t247* t248;
+typedef t248* t249;
+typedef t249* t250;
+typedef t250* t251;
+typedef t251* t252;
+typedef t252* t253;
+typedef t253* t254;
+typedef t254* t255;
+typedef t255* t256;
+t0 create_0() {return 10;}
+t1 create_1() {t1 a = alloc(t0); *a = create_0(); return a;}
+t2 create_2() {t2 a = alloc(t1); *a = create_1(); return a;}
+t3 create_3() {t3 a = alloc(t2); *a = create_2(); return a;}
+t4 create_4() {t4 a = alloc(t3); *a = create_3(); return a;}
+t5 create_5() {t5 a = alloc(t4); *a = create_4(); return a;}
+t6 create_6() {t6 a = alloc(t5); *a = create_5(); return a;}
+t7 create_7() {t7 a = alloc(t6); *a = create_6(); return a;}
+t8 create_8() {t8 a = alloc(t7); *a = create_7(); return a;}
+t9 create_9() {t9 a = alloc(t8); *a = create_8(); return a;}
+t10 create_10() {t10 a = alloc(t9); *a = create_9(); return a;}
+t11 create_11() {t11 a = alloc(t10); *a = create_10(); return a;}
+t12 create_12() {t12 a = alloc(t11); *a = create_11(); return a;}
+t13 create_13() {t13 a = alloc(t12); *a = create_12(); return a;}
+t14 create_14() {t14 a = alloc(t13); *a = create_13(); return a;}
+t15 create_15() {t15 a = alloc(t14); *a = create_14(); return a;}
+t16 create_16() {t16 a = alloc(t15); *a = create_15(); return a;}
+t17 create_17() {t17 a = alloc(t16); *a = create_16(); return a;}
+t18 create_18() {t18 a = alloc(t17); *a = create_17(); return a;}
+t19 create_19() {t19 a = alloc(t18); *a = create_18(); return a;}
+t20 create_20() {t20 a = alloc(t19); *a = create_19(); return a;}
+t21 create_21() {t21 a = alloc(t20); *a = create_20(); return a;}
+t22 create_22() {t22 a = alloc(t21); *a = create_21(); return a;}
+t23 create_23() {t23 a = alloc(t22); *a = create_22(); return a;}
+t24 create_24() {t24 a = alloc(t23); *a = create_23(); return a;}
+t25 create_25() {t25 a = alloc(t24); *a = create_24(); return a;}
+t26 create_26() {t26 a = alloc(t25); *a = create_25(); return a;}
+t27 create_27() {t27 a = alloc(t26); *a = create_26(); return a;}
+t28 create_28() {t28 a = alloc(t27); *a = create_27(); return a;}
+t29 create_29() {t29 a = alloc(t28); *a = create_28(); return a;}
+t30 create_30() {t30 a = alloc(t29); *a = create_29(); return a;}
+t31 create_31() {t31 a = alloc(t30); *a = create_30(); return a;}
+t32 create_32() {t32 a = alloc(t31); *a = create_31(); return a;}
+t33 create_33() {t33 a = alloc(t32); *a = create_32(); return a;}
+t34 create_34() {t34 a = alloc(t33); *a = create_33(); return a;}
+t35 create_35() {t35 a = alloc(t34); *a = create_34(); return a;}
+t36 create_36() {t36 a = alloc(t35); *a = create_35(); return a;}
+t37 create_37() {t37 a = alloc(t36); *a = create_36(); return a;}
+t38 create_38() {t38 a = alloc(t37); *a = create_37(); return a;}
+t39 create_39() {t39 a = alloc(t38); *a = create_38(); return a;}
+t40 create_40() {t40 a = alloc(t39); *a = create_39(); return a;}
+t41 create_41() {t41 a = alloc(t40); *a = create_40(); return a;}
+t42 create_42() {t42 a = alloc(t41); *a = create_41(); return a;}
+t43 create_43() {t43 a = alloc(t42); *a = create_42(); return a;}
+t44 create_44() {t44 a = alloc(t43); *a = create_43(); return a;}
+t45 create_45() {t45 a = alloc(t44); *a = create_44(); return a;}
+t46 create_46() {t46 a = alloc(t45); *a = create_45(); return a;}
+t47 create_47() {t47 a = alloc(t46); *a = create_46(); return a;}
+t48 create_48() {t48 a = alloc(t47); *a = create_47(); return a;}
+t49 create_49() {t49 a = alloc(t48); *a = create_48(); return a;}
+t50 create_50() {t50 a = alloc(t49); *a = create_49(); return a;}
+t51 create_51() {t51 a = alloc(t50); *a = create_50(); return a;}
+t52 create_52() {t52 a = alloc(t51); *a = create_51(); return a;}
+t53 create_53() {t53 a = alloc(t52); *a = create_52(); return a;}
+t54 create_54() {t54 a = alloc(t53); *a = create_53(); return a;}
+t55 create_55() {t55 a = alloc(t54); *a = create_54(); return a;}
+t56 create_56() {t56 a = alloc(t55); *a = create_55(); return a;}
+t57 create_57() {t57 a = alloc(t56); *a = create_56(); return a;}
+t58 create_58() {t58 a = alloc(t57); *a = create_57(); return a;}
+t59 create_59() {t59 a = alloc(t58); *a = create_58(); return a;}
+t60 create_60() {t60 a = alloc(t59); *a = create_59(); return a;}
+t61 create_61() {t61 a = alloc(t60); *a = create_60(); return a;}
+t62 create_62() {t62 a = alloc(t61); *a = create_61(); return a;}
+t63 create_63() {t63 a = alloc(t62); *a = create_62(); return a;}
+t64 create_64() {t64 a = alloc(t63); *a = create_63(); return a;}
+t65 create_65() {t65 a = alloc(t64); *a = create_64(); return a;}
+t66 create_66() {t66 a = alloc(t65); *a = create_65(); return a;}
+t67 create_67() {t67 a = alloc(t66); *a = create_66(); return a;}
+t68 create_68() {t68 a = alloc(t67); *a = create_67(); return a;}
+t69 create_69() {t69 a = alloc(t68); *a = create_68(); return a;}
+t70 create_70() {t70 a = alloc(t69); *a = create_69(); return a;}
+t71 create_71() {t71 a = alloc(t70); *a = create_70(); return a;}
+t72 create_72() {t72 a = alloc(t71); *a = create_71(); return a;}
+t73 create_73() {t73 a = alloc(t72); *a = create_72(); return a;}
+t74 create_74() {t74 a = alloc(t73); *a = create_73(); return a;}
+t75 create_75() {t75 a = alloc(t74); *a = create_74(); return a;}
+t76 create_76() {t76 a = alloc(t75); *a = create_75(); return a;}
+t77 create_77() {t77 a = alloc(t76); *a = create_76(); return a;}
+t78 create_78() {t78 a = alloc(t77); *a = create_77(); return a;}
+t79 create_79() {t79 a = alloc(t78); *a = create_78(); return a;}
+t80 create_80() {t80 a = alloc(t79); *a = create_79(); return a;}
+t81 create_81() {t81 a = alloc(t80); *a = create_80(); return a;}
+t82 create_82() {t82 a = alloc(t81); *a = create_81(); return a;}
+t83 create_83() {t83 a = alloc(t82); *a = create_82(); return a;}
+t84 create_84() {t84 a = alloc(t83); *a = create_83(); return a;}
+t85 create_85() {t85 a = alloc(t84); *a = create_84(); return a;}
+t86 create_86() {t86 a = alloc(t85); *a = create_85(); return a;}
+t87 create_87() {t87 a = alloc(t86); *a = create_86(); return a;}
+t88 create_88() {t88 a = alloc(t87); *a = create_87(); return a;}
+t89 create_89() {t89 a = alloc(t88); *a = create_88(); return a;}
+t90 create_90() {t90 a = alloc(t89); *a = create_89(); return a;}
+t91 create_91() {t91 a = alloc(t90); *a = create_90(); return a;}
+t92 create_92() {t92 a = alloc(t91); *a = create_91(); return a;}
+t93 create_93() {t93 a = alloc(t92); *a = create_92(); return a;}
+t94 create_94() {t94 a = alloc(t93); *a = create_93(); return a;}
+t95 create_95() {t95 a = alloc(t94); *a = create_94(); return a;}
+t96 create_96() {t96 a = alloc(t95); *a = create_95(); return a;}
+t97 create_97() {t97 a = alloc(t96); *a = create_96(); return a;}
+t98 create_98() {t98 a = alloc(t97); *a = create_97(); return a;}
+t99 create_99() {t99 a = alloc(t98); *a = create_98(); return a;}
+t100 create_100() {t100 a = alloc(t99); *a = create_99(); return a;}
+t101 create_101() {t101 a = alloc(t100); *a = create_100(); return a;}
+t102 create_102() {t102 a = alloc(t101); *a = create_101(); return a;}
+t103 create_103() {t103 a = alloc(t102); *a = create_102(); return a;}
+t104 create_104() {t104 a = alloc(t103); *a = create_103(); return a;}
+t105 create_105() {t105 a = alloc(t104); *a = create_104(); return a;}
+t106 create_106() {t106 a = alloc(t105); *a = create_105(); return a;}
+t107 create_107() {t107 a = alloc(t106); *a = create_106(); return a;}
+t108 create_108() {t108 a = alloc(t107); *a = create_107(); return a;}
+t109 create_109() {t109 a = alloc(t108); *a = create_108(); return a;}
+t110 create_110() {t110 a = alloc(t109); *a = create_109(); return a;}
+t111 create_111() {t111 a = alloc(t110); *a = create_110(); return a;}
+t112 create_112() {t112 a = alloc(t111); *a = create_111(); return a;}
+t113 create_113() {t113 a = alloc(t112); *a = create_112(); return a;}
+t114 create_114() {t114 a = alloc(t113); *a = create_113(); return a;}
+t115 create_115() {t115 a = alloc(t114); *a = create_114(); return a;}
+t116 create_116() {t116 a = alloc(t115); *a = create_115(); return a;}
+t117 create_117() {t117 a = alloc(t116); *a = create_116(); return a;}
+t118 create_118() {t118 a = alloc(t117); *a = create_117(); return a;}
+t119 create_119() {t119 a = alloc(t118); *a = create_118(); return a;}
+t120 create_120() {t120 a = alloc(t119); *a = create_119(); return a;}
+t121 create_121() {t121 a = alloc(t120); *a = create_120(); return a;}
+t122 create_122() {t122 a = alloc(t121); *a = create_121(); return a;}
+t123 create_123() {t123 a = alloc(t122); *a = create_122(); return a;}
+t124 create_124() {t124 a = alloc(t123); *a = create_123(); return a;}
+t125 create_125() {t125 a = alloc(t124); *a = create_124(); return a;}
+t126 create_126() {t126 a = alloc(t125); *a = create_125(); return a;}
+t127 create_127() {t127 a = alloc(t126); *a = create_126(); return a;}
+t128 create_128() {t128 a = alloc(t127); *a = create_127(); return a;}
+t129 create_129() {t129 a = alloc(t128); *a = create_128(); return a;}
+t130 create_130() {t130 a = alloc(t129); *a = create_129(); return a;}
+t131 create_131() {t131 a = alloc(t130); *a = create_130(); return a;}
+t132 create_132() {t132 a = alloc(t131); *a = create_131(); return a;}
+t133 create_133() {t133 a = alloc(t132); *a = create_132(); return a;}
+t134 create_134() {t134 a = alloc(t133); *a = create_133(); return a;}
+t135 create_135() {t135 a = alloc(t134); *a = create_134(); return a;}
+t136 create_136() {t136 a = alloc(t135); *a = create_135(); return a;}
+t137 create_137() {t137 a = alloc(t136); *a = create_136(); return a;}
+t138 create_138() {t138 a = alloc(t137); *a = create_137(); return a;}
+t139 create_139() {t139 a = alloc(t138); *a = create_138(); return a;}
+t140 create_140() {t140 a = alloc(t139); *a = create_139(); return a;}
+t141 create_141() {t141 a = alloc(t140); *a = create_140(); return a;}
+t142 create_142() {t142 a = alloc(t141); *a = create_141(); return a;}
+t143 create_143() {t143 a = alloc(t142); *a = create_142(); return a;}
+t144 create_144() {t144 a = alloc(t143); *a = create_143(); return a;}
+t145 create_145() {t145 a = alloc(t144); *a = create_144(); return a;}
+t146 create_146() {t146 a = alloc(t145); *a = create_145(); return a;}
+t147 create_147() {t147 a = alloc(t146); *a = create_146(); return a;}
+t148 create_148() {t148 a = alloc(t147); *a = create_147(); return a;}
+t149 create_149() {t149 a = alloc(t148); *a = create_148(); return a;}
+t150 create_150() {t150 a = alloc(t149); *a = create_149(); return a;}
+t151 create_151() {t151 a = alloc(t150); *a = create_150(); return a;}
+t152 create_152() {t152 a = alloc(t151); *a = create_151(); return a;}
+t153 create_153() {t153 a = alloc(t152); *a = create_152(); return a;}
+t154 create_154() {t154 a = alloc(t153); *a = create_153(); return a;}
+t155 create_155() {t155 a = alloc(t154); *a = create_154(); return a;}
+t156 create_156() {t156 a = alloc(t155); *a = create_155(); return a;}
+t157 create_157() {t157 a = alloc(t156); *a = create_156(); return a;}
+t158 create_158() {t158 a = alloc(t157); *a = create_157(); return a;}
+t159 create_159() {t159 a = alloc(t158); *a = create_158(); return a;}
+t160 create_160() {t160 a = alloc(t159); *a = create_159(); return a;}
+t161 create_161() {t161 a = alloc(t160); *a = create_160(); return a;}
+t162 create_162() {t162 a = alloc(t161); *a = create_161(); return a;}
+t163 create_163() {t163 a = alloc(t162); *a = create_162(); return a;}
+t164 create_164() {t164 a = alloc(t163); *a = create_163(); return a;}
+t165 create_165() {t165 a = alloc(t164); *a = create_164(); return a;}
+t166 create_166() {t166 a = alloc(t165); *a = create_165(); return a;}
+t167 create_167() {t167 a = alloc(t166); *a = create_166(); return a;}
+t168 create_168() {t168 a = alloc(t167); *a = create_167(); return a;}
+t169 create_169() {t169 a = alloc(t168); *a = create_168(); return a;}
+t170 create_170() {t170 a = alloc(t169); *a = create_169(); return a;}
+t171 create_171() {t171 a = alloc(t170); *a = create_170(); return a;}
+t172 create_172() {t172 a = alloc(t171); *a = create_171(); return a;}
+t173 create_173() {t173 a = alloc(t172); *a = create_172(); return a;}
+t174 create_174() {t174 a = alloc(t173); *a = create_173(); return a;}
+t175 create_175() {t175 a = alloc(t174); *a = create_174(); return a;}
+t176 create_176() {t176 a = alloc(t175); *a = create_175(); return a;}
+t177 create_177() {t177 a = alloc(t176); *a = create_176(); return a;}
+t178 create_178() {t178 a = alloc(t177); *a = create_177(); return a;}
+t179 create_179() {t179 a = alloc(t178); *a = create_178(); return a;}
+t180 create_180() {t180 a = alloc(t179); *a = create_179(); return a;}
+t181 create_181() {t181 a = alloc(t180); *a = create_180(); return a;}
+t182 create_182() {t182 a = alloc(t181); *a = create_181(); return a;}
+t183 create_183() {t183 a = alloc(t182); *a = create_182(); return a;}
+t184 create_184() {t184 a = alloc(t183); *a = create_183(); return a;}
+t185 create_185() {t185 a = alloc(t184); *a = create_184(); return a;}
+t186 create_186() {t186 a = alloc(t185); *a = create_185(); return a;}
+t187 create_187() {t187 a = alloc(t186); *a = create_186(); return a;}
+t188 create_188() {t188 a = alloc(t187); *a = create_187(); return a;}
+t189 create_189() {t189 a = alloc(t188); *a = create_188(); return a;}
+t190 create_190() {t190 a = alloc(t189); *a = create_189(); return a;}
+t191 create_191() {t191 a = alloc(t190); *a = create_190(); return a;}
+t192 create_192() {t192 a = alloc(t191); *a = create_191(); return a;}
+t193 create_193() {t193 a = alloc(t192); *a = create_192(); return a;}
+t194 create_194() {t194 a = alloc(t193); *a = create_193(); return a;}
+t195 create_195() {t195 a = alloc(t194); *a = create_194(); return a;}
+t196 create_196() {t196 a = alloc(t195); *a = create_195(); return a;}
+t197 create_197() {t197 a = alloc(t196); *a = create_196(); return a;}
+t198 create_198() {t198 a = alloc(t197); *a = create_197(); return a;}
+t199 create_199() {t199 a = alloc(t198); *a = create_198(); return a;}
+t200 create_200() {t200 a = alloc(t199); *a = create_199(); return a;}
+t201 create_201() {t201 a = alloc(t200); *a = create_200(); return a;}
+t202 create_202() {t202 a = alloc(t201); *a = create_201(); return a;}
+t203 create_203() {t203 a = alloc(t202); *a = create_202(); return a;}
+t204 create_204() {t204 a = alloc(t203); *a = create_203(); return a;}
+t205 create_205() {t205 a = alloc(t204); *a = create_204(); return a;}
+t206 create_206() {t206 a = alloc(t205); *a = create_205(); return a;}
+t207 create_207() {t207 a = alloc(t206); *a = create_206(); return a;}
+t208 create_208() {t208 a = alloc(t207); *a = create_207(); return a;}
+t209 create_209() {t209 a = alloc(t208); *a = create_208(); return a;}
+t210 create_210() {t210 a = alloc(t209); *a = create_209(); return a;}
+t211 create_211() {t211 a = alloc(t210); *a = create_210(); return a;}
+t212 create_212() {t212 a = alloc(t211); *a = create_211(); return a;}
+t213 create_213() {t213 a = alloc(t212); *a = create_212(); return a;}
+t214 create_214() {t214 a = alloc(t213); *a = create_213(); return a;}
+t215 create_215() {t215 a = alloc(t214); *a = create_214(); return a;}
+t216 create_216() {t216 a = alloc(t215); *a = create_215(); return a;}
+t217 create_217() {t217 a = alloc(t216); *a = create_216(); return a;}
+t218 create_218() {t218 a = alloc(t217); *a = create_217(); return a;}
+t219 create_219() {t219 a = alloc(t218); *a = create_218(); return a;}
+t220 create_220() {t220 a = alloc(t219); *a = create_219(); return a;}
+t221 create_221() {t221 a = alloc(t220); *a = create_220(); return a;}
+t222 create_222() {t222 a = alloc(t221); *a = create_221(); return a;}
+t223 create_223() {t223 a = alloc(t222); *a = create_222(); return a;}
+t224 create_224() {t224 a = alloc(t223); *a = create_223(); return a;}
+t225 create_225() {t225 a = alloc(t224); *a = create_224(); return a;}
+t226 create_226() {t226 a = alloc(t225); *a = create_225(); return a;}
+t227 create_227() {t227 a = alloc(t226); *a = create_226(); return a;}
+t228 create_228() {t228 a = alloc(t227); *a = create_227(); return a;}
+t229 create_229() {t229 a = alloc(t228); *a = create_228(); return a;}
+t230 create_230() {t230 a = alloc(t229); *a = create_229(); return a;}
+t231 create_231() {t231 a = alloc(t230); *a = create_230(); return a;}
+t232 create_232() {t232 a = alloc(t231); *a = create_231(); return a;}
+t233 create_233() {t233 a = alloc(t232); *a = create_232(); return a;}
+t234 create_234() {t234 a = alloc(t233); *a = create_233(); return a;}
+t235 create_235() {t235 a = alloc(t234); *a = create_234(); return a;}
+t236 create_236() {t236 a = alloc(t235); *a = create_235(); return a;}
+t237 create_237() {t237 a = alloc(t236); *a = create_236(); return a;}
+t238 create_238() {t238 a = alloc(t237); *a = create_237(); return a;}
+t239 create_239() {t239 a = alloc(t238); *a = create_238(); return a;}
+t240 create_240() {t240 a = alloc(t239); *a = create_239(); return a;}
+t241 create_241() {t241 a = alloc(t240); *a = create_240(); return a;}
+t242 create_242() {t242 a = alloc(t241); *a = create_241(); return a;}
+t243 create_243() {t243 a = alloc(t242); *a = create_242(); return a;}
+t244 create_244() {t244 a = alloc(t243); *a = create_243(); return a;}
+t245 create_245() {t245 a = alloc(t244); *a = create_244(); return a;}
+t246 create_246() {t246 a = alloc(t245); *a = create_245(); return a;}
+t247 create_247() {t247 a = alloc(t246); *a = create_246(); return a;}
+t248 create_248() {t248 a = alloc(t247); *a = create_247(); return a;}
+t249 create_249() {t249 a = alloc(t248); *a = create_248(); return a;}
+t250 create_250() {t250 a = alloc(t249); *a = create_249(); return a;}
+t251 create_251() {t251 a = alloc(t250); *a = create_250(); return a;}
+t252 create_252() {t252 a = alloc(t251); *a = create_251(); return a;}
+t253 create_253() {t253 a = alloc(t252); *a = create_252(); return a;}
+t254 create_254() {t254 a = alloc(t253); *a = create_253(); return a;}
+t255 create_255() {t255 a = alloc(t254); *a = create_254(); return a;}
+t256 create_256() {t256 a = alloc(t255); *a = create_255(); return a;}
+int main() {
+  t256 a = create_256();
+  return ****************************************************************************************************************************************************************************************************************************************************************a;
+}
+

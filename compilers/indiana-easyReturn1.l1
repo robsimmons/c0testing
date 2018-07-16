@@ -1,0 +1,4 @@
+//test return 10
+/* This program will return //@10 upon execution */ int main    (      )  {
+    //@assert true;
+    return 10;}
