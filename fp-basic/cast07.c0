@@ -1,4 +1,4 @@
-//test error_typecheck
+//test error_parse
 
 int main() {
   void* x = NULL;

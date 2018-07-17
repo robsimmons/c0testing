@@ -1,0 +1,8 @@
+//test error
+
+int main() 
+{
+void** x = NULL;
+*x;
+return 0;
+}

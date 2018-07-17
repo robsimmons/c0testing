@@ -1,0 +1,13 @@
+//test error_parse
+//test --standard=c0 => error_parse
+//test --standard=c1 => memerror
+
+typedef int bleh;
+
+int main() {
+    int *x = NULL;
+    bool *y = NULL;
+    bleh *z = NULL;
+    void *w = NULL;
+    return *z;
+}
