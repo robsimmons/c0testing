@@ -1,0 +1,19 @@
+//test error
+
+struct point{
+	int x;
+	int y;
+};
+
+struct points{
+	struct point p;
+};
+
+
+int main(){
+	struct points* p = alloc(struct points);
+	p->p;
+	
+	return 0;
+	
+}
