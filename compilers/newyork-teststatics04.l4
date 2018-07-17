@@ -1,0 +1,7 @@
+//test memerror
+
+int main(){
+	int * c = NULL;
+	*(true ? NULL : c);
+	return 0;
+}
