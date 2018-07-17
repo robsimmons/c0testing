@@ -1,0 +1,64 @@
+//test return 702
+/**
+ * Team Rocket is here to
+ * @ensures world is protected from devastation,
+ * @ensures unite all peoples within our nation,
+ * @ensures denounce the evils of truth and love,
+ * @ensures extend our reach to the stars above,
+ * @ensures asserts and function calls work with a lot of arguments.
+ */
+
+int prepare_for_trouble(
+  int a, int b, int c, int d, int e, int f, int g,
+  int h, int i, int j, int k, int l, int m, int n,
+  int o, int p, int q, int r, int s, int t, int u,
+  int v, int w, int x, int y, int z
+);
+int make_it_double(int x);
+void blast_off_at_the_speed_of(int light);
+void surrender_now_or_prepare_to_fight(bool surrender, bool fight);
+void meowth_thats_right();
+
+
+int prepare_for_trouble(
+  int a, int b, int c, int d, int e, int f, int g,
+  int h, int i, int j, int k, int l, int m, int n,
+  int o, int p, int q, int r, int s, int t, int u,
+  int v, int w, int x, int y, int z
+) {
+
+  int light = make_it_double(
+    a + b + c + d + e + f + g + h + i + j + k + l + m +
+    n + o + p + q + r + s + t + u + v + w + x + y + z
+  );
+
+  blast_off_at_the_speed_of(light);
+  return light;
+}
+
+int make_it_double(int x) {
+  return 2 * x;
+}
+
+void blast_off_at_the_speed_of(int light) {
+  assert(light > 0);
+  surrender_now_or_prepare_to_fight(false, true);
+}
+
+void surrender_now_or_prepare_to_fight(bool surrender, bool fight) {
+  assert(surrender || fight);
+}
+
+void meowth_thats_right() {
+  assert(true);
+}
+
+int main () {
+  int light = prepare_for_trouble(
+    1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,
+    15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26
+  );
+  blast_off_at_the_speed_of(light);
+  meowth_thats_right();
+  return light;
+}
