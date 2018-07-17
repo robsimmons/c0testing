@@ -1,0 +1,9 @@
+//test error_parse
+// typedef without trailing semicolon
+
+typedef int blah
+typedef int bar;
+
+int main() {
+    return 4;
+}

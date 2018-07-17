@@ -24,6 +24,7 @@ one or more lines at the beginning of the file begin with `//test`.
          | segfault          - Memory error
          | memerror          - Memory error (alias of segfault)
          | typecheck         - Pass all static checks. Do not link/run.
+         | compile           - Pass all static checks. Link. Do not run.
 ```
 
 The `typecheck` spec means that the spec should pass _all_ static checks,

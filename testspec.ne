@@ -21,5 +21,6 @@ Spec  -> "return" _ ("-" | "~"):? [0-9]:+
        | "segfault"
        | "memerror"
        | "typecheck"
+       | "compile"
 
 _     -> " ":*
