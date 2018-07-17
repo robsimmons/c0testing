@@ -1,0 +1,29 @@
+//test return 23
+
+int Batman();
+	
+
+int ma1n () {
+	return 0;
+}
+
+int main() {
+
+//I'm not batman....maybe. I think.
+
+
+return Batman(                		
+
+
+		
+
+
+
+	
+     );}
+
+int Batman() {
+return /* I'm batman! */ 23;
+}
+
+
