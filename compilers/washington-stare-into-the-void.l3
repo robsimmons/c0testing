@@ -1,0 +1,9 @@
+//test error
+
+void foo() {
+}
+
+int main() {
+    bool b = foo() == foo();
+    return 0;
+}
