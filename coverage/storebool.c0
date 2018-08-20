@@ -1,0 +1,7 @@
+//test return 0
+
+int main() {
+    bool* x = alloc(bool);
+    *x = !!*x;
+    return *x ? 1 : 0;
+}
