@@ -1,0 +1,7 @@
+//test return 6
+
+int main() {
+    int i = 14;
+    i &= 7;
+    return i;
+}
