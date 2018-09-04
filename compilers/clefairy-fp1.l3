@@ -1,0 +1,5 @@
+//test return ~2147483648
+
+int main() {
+	return ftoi(fdiv(itof(15411), itof(0)));
+}
