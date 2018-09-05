@@ -1,0 +1,26 @@
+//test return 10
+dub sqrt(int n) {
+  assert(n >= 1);
+  dub low = itod(1);
+  dub high = itod(n);
+  dub dmid = NULL;
+  dub margin = ddiv(itod(1), itod(10000)); 
+  while(dless(margin, dsub(high, low))) {
+    dmid = ddiv(dadd(low, high), itod(2));
+    dub multip = dmul(dmid, dmid);
+    if (dless(multip, itod(n))) {
+      low = dmid;
+    } else {
+      high = dmid;
+    }
+  }
+  assert(dmid != NULL);
+  return dmid;
+}
+
+int main() {
+  for(int i = 2; i < 10000; i++) {
+    print_dub(sqrt(i));
+  }
+  return dtoi(sqrt(105));
+}
