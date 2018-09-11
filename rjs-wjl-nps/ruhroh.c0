@@ -1,4 +1,5 @@
-//test abort
+//test return 0
+//test -d => abort
 int main() 
 //@requires false;
 {
